@@ -63,6 +63,53 @@
                 <img src="img/stage-1.png" alt="工作流">
             </section>
         </section>
+        <section>
+            <section>
+                <h2>分支</h2>
+                <p class="fragment">为了理解 Git 分支的实现方式，我们需要回顾一下 Git 是如何储存数据的。</p>
+            </section>
+            <section>
+                <pre><code class="bash">
+git add README test.rb LICENSE
+git commit -m 'initial commit of my project'
+                </code></pre>
+                <img src="img/branch-1.png" alt="branch-1">
+            </section>
+            <section>
+                <h4>commit复commit</h4>
+                <img src="img/branch-2.png" alt="branch-2">
+            </section>
+            <section>
+                <h4>那么说好的分支呢</h4>
+                <img src="img/branch-3.png" alt="branch-3" class="fragment">
+                <p class="fragment">分支其实就是从某个提交对象往回看的历史</p>
+            </section>
+            <section>
+                <h4>新建分支</h4>
+                <pre><code class="bash">git branch testing</code></pre>
+                <p>这会在当前 commit 对象上新建一个分支指针</p>
+                <img src="img/branch-4.png" alt="branch-4">
+            </section>
+            <section>
+                <h4>HEAD</h4>
+                <img src="img/branch-5.png" alt="branch-5">
+                <p>不同于svn <br> git中的HEAD指针指向的是分支 <br> 而不是commit</p>
+            </section>
+            <section>
+                <h3>远程分支</h3>
+                <p>远程分支是对远程仓库中的分支的索引。它们是一些无法移动的本地分支；只有在 Git 进行网络交互时才会更新。
+                    远程分支就像是书签，提醒着你上次连接远程仓库时上面各分支的位置。</p>
+            </section>
+            <section>
+                <h4>clone</h4>
+                <img src="img/branch-6.png" alt="branch-6">
+            </section>
+            <section>
+                <h4>fetch</h4>
+                <img src="img/branch-7.png" alt="branch-7">
+            </section>
+
+        </section>
     </div>
 </div>
 
