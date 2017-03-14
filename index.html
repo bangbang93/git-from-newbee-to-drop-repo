@@ -32,6 +32,50 @@
         </section>
         <section>
             <section>
+                <h3>思想</h3>
+            </section>
+            <section>
+                <h4>直接记录快照，而非差异比较</h4>
+            </section>
+            <section>
+                <img src="img/base-1.png" alt="base-1" style="background-color: white">
+                <div style="font-size: 50%">存储每个文件与初始版本的差异</div>
+            </section>
+            <section>
+                <img src="img/base-2.png" alt="base-2">
+                <div style="font-size: 50%;">存储项目随时间改变的快照</div>
+            </section>
+            <section>
+                <h4>近乎所有操作都是本地执行</h4>
+                <ul>
+                    <li>本地提交</li>
+                    <li>本地提取</li>
+                    <li>本地对比</li>
+                </ul>
+            </section>
+            <section>
+                <h4>Git 保证完整性</h4>
+                <p>Git 中所有数据在存储前都计算校验和，然后以校验和来引用。 这意味着不可能在 Git 不知情时更改任何文件内容或目录内容。</p>
+                <p>SHA-1</p>
+            </section>
+            <section>
+                <h4>Git 一般只添加数据</h4>
+                <p>你执行的 Git 操作，几乎只往 Git 数据库中增加数据。 很难让 Git 执行任何不可逆操作，或者让它以任何方式清除数据。</p>
+            </section>
+            <section>
+                <h4>三种状态</h4>
+                <ul>
+                    <li>已提交（committed）</li>
+                    <li>已修改（modified）</li>
+                    <li>已暂存（staged）</li>
+                </ul>
+            </section>
+            <section>
+                <img src="img/base-3.png" alt="base-3">
+            </section>
+        </section>
+        <section>
+            <section>
                 <h2>暂存区</h2>
                 <p class="fragment">Git和其他版本控制系统如SVN的一个不同之处就是有暂存区的概念。</p>
             </section>
@@ -127,6 +171,13 @@ git commit -m 'initial commit of my project'
                 <h4>司令官与副官工作流</h4>
                 <img src="img/workflow-3.png" alt="workflow-3">
             </section>
+        </section>
+        <section>
+            <h3>DLC</h3>
+            <ul>
+                <li class="fragment">https://try.github.io</li>
+                <li class="fragment">https://git-scm.com/book/zh/v2</li>
+            </ul>
         </section>
     </div>
 </div>
